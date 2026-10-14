@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Territory Scrambleの囲い込みルールと、マシンガン・防具・回復を実際のゲーム画像で解説する日本語プレイヤーガイドです。">
+  <meta name="color-scheme" content="light">
+  <title>プレイヤーガイド · Territory Scramble</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="manual.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="Territory Scramble ガイドの先頭へ"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"></a>
+    <div class="edition"><span>プレイヤーガイド</span><nav class="language-switch" aria-label="言語切替"><a href="index.html" lang="en" hreflang="en">English</a><a href="ja.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></nav></div>
+  </header>
+  <div class="page-layout">
+    <aside class="contents">
+      <p class="contents-title">このガイドの内容</p>
+      <nav aria-label="目次">
+        <a href="#enclosure">囲い込み</a>
+        <a href="#rules">囲いに使えるマス</a>
+        <a href="#items">武器・アイテム</a>
+        <a href="#questions">よくある質問</a>
+      </nav>
+      <div class="edition-note"><span class="prototype-dot"></span> 試作版<p>囲い込みと全8種中3種のアイテムを掲載。<br>ほかの章は順次追加予定です。</p></div>
+    </aside>
+    <main id="main">
+      <section id="enclosure" aria-labelledby="enclosure-title">
+        <div class="chapter-intro">
+          <p class="chapter-label">陣地を広げるルール</p>
+          <h1 id="enclosure-title">輪をつないで、<br>内側を陣地に。</h1>
+          <p class="lead">自分のチームの色のマスをつなぎ、閉じた輪を作りましょう。最後の隙間を塗ると、内側のマスをまとめて取得できます。</p>
+          <p class="rule-switch"><span class="switch-icon" aria-hidden="true"></span> 試合ルールの <strong>「囲い込み：ON」</strong> が必要です。</p>
+        </div>
+
+        <figure class="comparison">
+          <div class="comparison-toolbar">
+            <div class="state-buttons" role="group" aria-label="囲い込みの比較画像">
+              <button type="button" data-state="before" aria-pressed="true">成立前</button>
+              <button type="button" data-state="after" aria-pressed="false">成立後</button>
+            </div>
+            <span class="example-label">赤チームの例</span>
+          </div>
+          <button type="button" class="image-button comparison-image" data-zoom aria-label="囲い込みの画像を拡大">
+            <img id="enclosure-image" src="assets/enclosure-before.png" width="1600" height="900" alt="青い7マスを囲む赤い輪の右側に、まだ塗られていない隙間が1マスあります。赤いプレイヤーは隙間の外側にいます。" fetchpriority="high">
+            <span class="zoom-label">画像を拡大</span>
+          </button>
+          <figcaption><strong id="comparison-title">1マスでも隙間があると、囲いは未完成。</strong> <span id="comparison-description">内側の青い7マスは、まだ相手チームの陣地です。右側の隙間を塗ると、輪が閉じます。</span></figcaption>
+          <noscript><p class="no-script">下の成立後の画像と比べてみましょう。</p><img src="assets/enclosure-after.png" width="1600" height="900" alt="隙間を赤く塗ると、内側の青い7マスがすべて赤に変わります。"></noscript>
+        </figure>
+
+        <ol class="steps">
+          <li><span class="step-number">1</span><h2>自色のマスをつなぐ</h2><p>通常のマスを踏んで塗ります。六角形の辺で接する6方向につながるように線を作りましょう。</p></li>
+          <li><span class="step-number">2</span><h2>最後の隙間を閉じる</h2><p>自分のチームの色で線の両端をつなぎます。輪の形は自由で、きれいな六角形でなくても成立します。</p></li>
+          <li><span class="step-number">3</span><h2>内側をまとめて取得</h2><p>輪の内側にある中立・敵色の通常床と障害物床が、即座に自分のチームの色へ変わります。</p></li>
+        </ol>
+        <p class="tip"><strong>味方と協力しましょう。</strong> 味方や味方CPU、カノン砲、以前の囲い込みで自色になったマスも、輪の一部として使えます。</p>
+      </section>
+
+      <section id="rules" class="chapter" aria-labelledby="rules-title">
+        <div class="section-heading"><h2 id="rules-title">どのマスを囲いに使える？</h2><p>マップの形ではなく、自分のチームの色で輪が閉じていることが条件です。</p></div>
+        <div class="rule-table-wrap"><table class="rule-table">
+          <caption class="sr-only">マスの種類ごとの、囲いの線に使える条件と囲い込みで取得できる範囲</caption>
+          <thead><tr><th scope="col">マス・場所</th><th scope="col">囲いの線に使える？</th><th scope="col">内側にあれば取得できる？</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">通常床</th><td>自色なら<span class="yes">使える</span></td><td><span class="yes">取得できる</span></td></tr>
+            <tr><th scope="row">障害物床</th><td>自色なら<span class="yes">使える</span></td><td><span class="yes">取得できる</span>（障害物本体は残る）</td></tr>
+            <tr><th scope="row">カノン占拠床</th><td>自チームがカノンを占拠している場合のみ</td><td><span class="no">取得できない</span></td></tr>
+            <tr><th scope="row">拠点専用の7マス</th><td><span class="no">使えない</span></td><td><span class="no">取得できない</span></td></tr>
+            <tr><th scope="row">穴・場外</th><td><span class="no">使えない</span></td><td><span class="no">取得できない</span></td></tr>
+          </tbody>
+        </table></div>
+        <details><summary>障害物床とカノンの補足ルール</summary><div class="details-body"><p>障害物床は踏んでも塗れません。カノン砲撃や囲い込みで取得すると、自色の線として次の囲い込みに利用できます。</p><p>カノンの占拠・奪取で輪が完成した場合も、即座に囲い込みが成立します。中立や敵チームのカノン床は、自チームの線には使えません。カノンを囲んでもカノン自体は占拠できず、カノン床は所有マス数にも含まれません。</p></div></details>
+        <details><summary>輪の内側に穴・拠点・カノンがあったら？</summary><div class="details-body"><p>周囲の取得可能なマスは、そのまま取得できます。穴や専用床は対象から除かれ、拠点・カノンの所有権は変わりません。</p><p>穴やマップの端を、線の足りない部分の代わりにはできません。自色のマスで輪を閉じる必要があります。</p></div></details>
+      </section>
+
+      <section id="items" class="chapter" aria-labelledby="items-title">
+        <div class="section-heading"><p class="chapter-label">拾えるアイテムを知ろう</p><h2 id="items-title">装備が変わると、<br>戦い方も変わる。</h2><p>まずは3種類を紹介します。見た目と効果を覚えて、試合で活用しましょう。</p></div>
+        <article class="item" id="machine-gun">
+          <figure><button class="image-button" type="button" data-zoom aria-label="マシンガンの画像を拡大"><img src="assets/item-machinegun.png" alt="ゲームの六角形の床の上に浮かぶ、実際のマシンガンの取得用モデル。" width="1200" height="800" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>マシンガンの取得用モデル</figcaption></figure>
+          <div class="item-copy"><p class="item-category">武器</p><h3>マシンガン</h3><p>攻撃入力を押し続けると連射できます。相手に継続して攻撃を仕掛けられる武器です。</p><dl class="stats"><div><dt>1発のダメージ</dt><dd>15</dd></div><div><dt>装弾数</dt><dd>40発</dd></div><div><dt>射程</dt><dd>5マス</dd></div></dl><p class="field-note"><strong>使いどころ：</strong>中距離での継続攻撃に。残りの弾数にも気を配りましょう。</p></div>
+        </article>
+        <article class="item" id="armor">
+          <figure><button class="image-button" type="button" data-zoom aria-label="防具の画像を拡大"><img src="assets/item-armor.png" alt="ゲームの床の上に浮かぶ、茶色い盾型の防具アイテム。" width="1200" height="800" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>防具の取得用モデル</figcaption></figure>
+          <div class="item-copy"><p class="item-category">防御</p><h3>防具</h3><p>茶色い盾が目印です。防具が壊れるまで、受けるダメージを軽減します。</p><dl class="stats"><div><dt>被ダメージ軽減</dt><dd>50%</dd></div><div><dt>耐久（吸収量）</dt><dd>50ダメージ</dd></div></dl><p class="field-note"><strong>覚えておこう：</strong>防具はダメージを吸収するもので、HPは回復しません。吸収したダメージが累計50に達すると壊れます。</p></div>
+        </article>
+        <article class="item" id="heal">
+          <figure><button class="image-button" type="button" data-zoom aria-label="回復の画像を拡大"><img src="assets/item-heal.png" alt="ゲームの床の上に浮かぶ、緑色の十字型の回復アイテム。" width="1200" height="800" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>回復の取得用モデル</figcaption></figure>
+          <div class="item-copy"><p class="item-category">回復</p><h3>回復</h3><p>緑色の十字が目印です。拾うとすぐにHPが回復します。最大HPを超えて回復することはありません。</p><dl class="stats"><div><dt>HP回復量</dt><dd>+50 HP</dd></div><div><dt>効果のタイミング</dt><dd>取得直後</dd></div></dl><p class="field-note"><strong>使いどころ：</strong>戦闘で減ったHPを回復して、次の行動につなげましょう。</p></div>
+        </article>
+        <p class="scope-note">この試作版は全8種類のうち3種類を掲載しています。ショットガン・プラズマ砲・地雷・索敵・スピードアップは今後追加予定です。</p>
+      </section>
+
+      <section id="questions" class="chapter questions" aria-labelledby="questions-title">
+        <div class="section-heading"><h2 id="questions-title">試す前に知っておこう</h2></div>
+        <details open><summary>周囲を塗ったのに、囲い込みが成立しません。</summary><div class="details-body"><p>囲い込みがONになっているか、線に隙間がないかを確認しましょう。カノン床を線に使う場合も含め、輪の全体が自チームの色でつながっている必要があります。穴・拠点専用床・マップの端で隙間を埋めることはできません。</p></div></details>
+        <details><summary>輪は全部自分で塗らないといけませんか？</summary><div class="details-body"><p>いいえ。チームの色が同じなら使えます。味方・味方CPU・カノン砲撃・以前の囲い込みで塗られたマスも輪の一部になります。</p></div></details>
+        <details><summary>輪を閉じたら、中のマスはずっと守られますか？</summary><div class="details-body"><p>いいえ。囲い込みは、新しく輪が閉じた瞬間の一括取得です。相手はそのマスを奪い返せます。完成済みの輪が、内側を繰り返し自動で塗り直すことはありません。</p></div></details>
+        <details><summary>拠点を囲めば、占拠できますか？</summary><div class="details-body"><p>いいえ。拠点やカノンの占拠には、それぞれの占拠ルールがあります。囲い込みで取得するのは、対象となる床のマスだけです。</p></div></details>
+      </section>
+      <footer class="page-footer"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"><p>日本語マニュアル試作版 · 2026年10月14日</p><p>画像は実行中のローカル試合で、説明用に配置を整え、HUDを隠してカメラを調整したものです。アイテムの拡大画像も、実際のゲーム内モデルを使用しています。</p><p>掲載範囲は囲い込みと3種類のアイテムです。メニュー・ロビー・拠点占拠・残りのアイテムはまだ掲載していません。</p><a href="#enclosure">ガイドの先頭へ</a></footer>
+    </main>
+  </div>
+  <dialog id="image-viewer" aria-label="ゲーム画像の拡大表示"><button type="button" class="close-viewer" autofocus>閉じる <span aria-hidden="true">×</span></button><img src="assets/enclosure-before.png" alt=""><p class="viewer-caption"></p></dialog>
+</body>
+</html>
