@@ -15,3 +15,5 @@ html:lang(ja) h2{font-size:clamp(1.6rem,2.5vw,2.3rem)}
 html:lang(ja) .steps h2{font-size:1.1rem}
 @media(max-width:760px){.site-header{flex-wrap:wrap;gap:12px}.site-header .brand{width:min(210px,100%)}.site-header .edition{margin-left:auto}.language-switch a{padding:8px 10px}}
 @media print{.language-switch{display:none}}
+
+.guide-capture{margin:24px 0 30px}.guide-capture figcaption{font-size:.85rem;color:var(--muted);line-height:1.65;padding-top:10px}.capture-pair{display:grid;grid-template-columns:1fr 1fr;gap:22px}.capture-pair .guide-capture{margin-top:0}.guide-subheading{font-size:1.5rem;margin-top:36px;line-height:1.4}.instruction-list{padding-left:1.5em;line-height:1.85}.instruction-list li{padding:0 0 14px 6px}.instruction-list li::marker{color:var(--blue);font-weight:700}@media(max-width:760px){.capture-pair{grid-template-columns:1fr;gap:0}.guide-subheading{font-size:1.3rem}}
