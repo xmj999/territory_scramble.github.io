@@ -4,7 +4,7 @@ An illustrated manual preview covering keyboard/mouse and controller basics, enc
 
 ## GitHub Pages
 
-Publication is deferred at the owner's request (14 October 2026). Keep this repository private and do not enable Pages yet. The current plan rejected Pages for this private repository. The following instructions are for a future, approved publication.
+Publication and conversion of this manual-only repository to public were approved by the owner on 14 October 2026.
 Publish from **main / (root)** under **Settings → Pages → Deploy from a branch**.
 Private-repository Pages requires an eligible GitHub plan.
 
@@ -16,6 +16,6 @@ No build step is required. `index.html`, `ja.html`, `styles.css`, `manual.js` an
 
 Twenty captures show the real game and UI. Match images are staged for explanation with the HUD hidden and camera adjusted. The enclosure pair uses the actual game capture logic. Item images show all eight actual pickup prefabs. Menus and the lobby have separate English/Japanese captures. The lobby was photographed in a local-host loopback session, not a public Steam session. Development-only menu options are hidden to match the release UI.
 
-This remains a preview. Languages other than English/Japanese, in-game integration and PDF export are not included. Website publication and Steam store links remain deferred.
+This remains a preview. Languages other than English/Japanese, in-game integration and PDF export are not included. Steam store links are not configured.
 
-Source snapshot: game repository commit `b361f98`, `website/manual/dist/`. Update both language pages and the comparison text in `manual.js` in the game repository, then copy the HTML, CSS, JavaScript and PNG images here. Do not upload the game source, raw models, credentials or hosting configuration for other services.
+Source snapshot: game repository commit `5c79314`, `website/manual/dist/`. Update both language pages and the comparison text in `manual.js` in the game repository, then copy the HTML, CSS, JavaScript and PNG images here. Do not upload the game source, raw models, credentials or hosting configuration for other services.
