@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Learn how enclosure works in Territory Scramble and get to know the Machine Gun, Armor and Heal pickups. Illustrated English player guide.">
+  <meta name="color-scheme" content="light">
+  <title>Player guide · Territory Scramble</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="manual.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to the guide</a>
+  <header class="site-header">
+    <a href="#" class="brand" aria-label="Territory Scramble guide home"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"></a>
+    <div class="edition"><span>Player guide</span><span class="language">English</span></div>
+  </header>
+  <div class="page-layout">
+    <aside class="contents">
+      <p class="contents-title">In this guide</p>
+      <nav aria-label="Guide contents">
+        <a href="#enclosure">Enclosure</a>
+        <a href="#rules">What counts?</a>
+        <a href="#items">Weapons &amp; items</a>
+        <a href="#questions">Common questions</a>
+      </nav>
+      <div class="edition-note"><span class="prototype-dot"></span> Preview edition<p>Enclosure + 3 of 8 items.<br>More chapters to follow.</p></div>
+    </aside>
+    <main id="main">
+      <section id="enclosure" aria-labelledby="enclosure-title">
+        <div class="chapter-intro">
+          <p class="chapter-label">The rules of territory</p>
+          <h1 id="enclosure-title">Close the loop.<br>Claim the inside.</h1>
+          <p class="lead">Connect tiles of your team’s color into a closed loop. When you close the last gap, the tiles inside become yours.</p>
+          <p class="rule-switch"><span class="switch-icon" aria-hidden="true"></span> Requires <strong>Enclosure: ON</strong> in the match rules.</p>
+        </div>
+
+        <figure class="comparison">
+          <div class="comparison-toolbar">
+            <div class="state-buttons" role="group" aria-label="Enclosure screenshot">
+              <button type="button" data-state="before" aria-pressed="true">Before</button>
+              <button type="button" data-state="after" aria-pressed="false">After</button>
+            </div>
+            <span class="example-label">Red team example</span>
+          </div>
+          <button type="button" class="image-button comparison-image" data-zoom aria-label="Enlarge the enclosure screenshot">
+            <img id="enclosure-image" src="assets/enclosure-before.png" width="1600" height="900" alt="A red loop around seven blue tiles has one unpainted gap on its right side. The red player stands outside the gap." fetchpriority="high">
+            <span class="zoom-label">Enlarge image</span>
+          </button>
+          <figcaption><strong id="comparison-title">One gap keeps the loop open.</strong> <span id="comparison-description">The seven blue tiles inside still belong to the other team. Paint the missing tile on the right to close the loop.</span></figcaption>
+          <noscript><p class="no-script">Compare with the result below.</p><img src="assets/enclosure-after.png" width="1600" height="900" alt="After the gap is painted red, all seven enclosed blue tiles turn red."></noscript>
+        </figure>
+
+        <ol class="steps">
+          <li><span class="step-number">1</span><h2>Build a connected line</h2><p>Walk over normal tiles to paint them. Your line must connect along the six sides of the hexagons.</p></li>
+          <li><span class="step-number">2</span><h2>Close the last gap</h2><p>Join the ends with your team’s color. A loop can be any shape; it does not have to be a perfect hexagon.</p></li>
+          <li><span class="step-number">3</span><h2>Take the inside</h2><p>Enclosed neutral and enemy normal tiles, including obstacle floors, change to your team’s color immediately.</p></li>
+        </ol>
+        <p class="tip"><strong>Work together.</strong> Tiles painted by teammates, CPU teammates, cannons or earlier enclosures can all be part of your loop.</p>
+      </section>
+
+      <section id="rules" class="chapter" aria-labelledby="rules-title">
+        <div class="section-heading"><h2 id="rules-title">What counts as a boundary?</h2><p>A closed line of your team’s tiles matters more than the shape of the map.</p></div>
+        <div class="rule-table-wrap"><table class="rule-table">
+          <caption class="sr-only">Which parts of the map form an enclosure boundary and which can be captured</caption>
+          <thead><tr><th scope="col">Tile or space</th><th scope="col">Part of your loop?</th><th scope="col">Captured inside?</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Normal floor</th><td><span class="yes">Yes</span>, when it is your color</td><td><span class="yes">Yes</span></td></tr>
+            <tr><th scope="row">Obstacle floor</th><td><span class="yes">Yes</span>, when it is your color</td><td><span class="yes">Yes</span>; the obstacle stays</td></tr>
+            <tr><th scope="row">Cannon capture tile</th><td>Only when your team owns the cannon</td><td><span class="no">No</span></td></tr>
+            <tr><th scope="row">Base’s seven special tiles</th><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+            <tr><th scope="row">Holes &amp; outside the map</th><td><span class="no">No</span></td><td><span class="no">No</span></td></tr>
+          </tbody>
+        </table></div>
+        <details><summary>Obstacle floors and cannons: the extra rules</summary><div class="details-body"><p>You cannot paint an obstacle floor by walking over it. Cannon fire or an enclosure can take it. Once it is your color, it can help form another loop.</p><p>Taking a cannon can complete a loop immediately. A neutral or enemy-owned cannon tile does not count as your boundary. Enclosing a cannon does not capture the cannon itself, and its tile does not add to your territory count.</p></div></details>
+        <details><summary>What if a hole, base or cannon is inside the loop?</summary><div class="details-body"><p>You can still capture the eligible tiles around it. Special tiles and holes are skipped. Base and cannon ownership does not change.</p><p>A hole or the edge of the map cannot replace a missing part of your boundary. You still need a complete loop of your own tiles.</p></div></details>
+      </section>
+
+      <section id="items" class="chapter" aria-labelledby="items-title">
+        <div class="section-heading"><p class="chapter-label">Know your pickups</p><h2 id="items-title">A little equipment.<br>A different plan.</h2><p>Three items to get you started. Recognize their shapes, then choose how to use their effects.</p></div>
+        <article class="item" id="machine-gun">
+          <figure><button class="image-button" type="button" data-zoom aria-label="Enlarge the Machine Gun pickup"><img src="assets/item-machinegun.png" alt="The actual gray Machine Gun pickup model floating above the game’s hexagonal floor." width="1200" height="800" loading="lazy"><span class="zoom-label">Enlarge image</span></button><figcaption>Machine Gun pickup</figcaption></figure>
+          <div class="item-copy"><p class="item-category">Weapon</p><h3>Machine Gun</h3><p>Automatic fire for keeping pressure on an opponent. Hold the attack input to keep firing.</p><dl class="stats"><div><dt>Damage per bullet</dt><dd>15</dd></div><div><dt>Ammunition</dt><dd>40 rounds</dd></div><div><dt>Range</dt><dd>5 tiles</dd></div></dl><p class="field-note"><strong>Use it for</strong> sustained pressure at medium range. Keep an eye on your remaining ammunition.</p></div>
+        </article>
+        <article class="item" id="armor">
+          <figure><button class="image-button" type="button" data-zoom aria-label="Enlarge the Armor pickup"><img src="assets/item-armor.png" alt="The actual brown shield-shaped Armor pickup floating above the game floor." width="1200" height="800" loading="lazy"><span class="zoom-label">Enlarge image</span></button><figcaption>Armor pickup</figcaption></figure>
+          <div class="item-copy"><p class="item-category">Protection</p><h3>Armor</h3><p>The brown shield reduces incoming damage while its protection lasts.</p><dl class="stats"><div><dt>Damage reduction</dt><dd>50%</dd></div><div><dt>Absorption capacity</dt><dd>50 damage</dd></div></dl><p class="field-note"><strong>Remember</strong> armor absorbs damage; it does not restore health. Its protection is limited by how much it has absorbed.</p></div>
+        </article>
+        <article class="item" id="heal">
+          <figure><button class="image-button" type="button" data-zoom aria-label="Enlarge the Heal pickup"><img src="assets/item-heal.png" alt="The actual bright green cross-shaped Heal pickup floating above the game floor." width="1200" height="800" loading="lazy"><span class="zoom-label">Enlarge image</span></button><figcaption>Heal pickup</figcaption></figure>
+          <div class="item-copy"><p class="item-category">Recovery</p><h3>Heal</h3><p>The green cross restores health immediately when collected, up to your maximum HP.</p><dl class="stats"><div><dt>Health restored</dt><dd>+50 HP</dd></div><div><dt>Effect</dt><dd>Immediate</dd></div></dl><p class="field-note"><strong>Use it for</strong> recovering after a fight so you can stay in the match.</p></div>
+        </article>
+        <p class="scope-note">This preview covers 3 of the game’s 8 items. Shotgun, Plasma Cannon, Mine, Radar and Speed Up are planned for the full guide.</p>
+      </section>
+
+      <section id="questions" class="chapter questions" aria-labelledby="questions-title">
+        <div class="section-heading"><h2 id="questions-title">Before you try it</h2></div>
+        <details open><summary>I painted around an area. Why did nothing happen?</summary><div class="details-body"><p>Check that Enclosure is ON and that your line has no gaps. Every link must be your team’s color, including any cannon tile used in the boundary. Holes, base tiles and the edge of the map cannot close the gap for you.</p></div></details>
+        <details><summary>Do I have to paint every tile in the loop myself?</summary><div class="details-body"><p>No. The loop belongs to your team. Tiles painted by teammates, CPU teammates, cannon fire and earlier enclosures all count.</p></div></details>
+        <details><summary>Does a closed loop protect its tiles forever?</summary><div class="details-body"><p>No. Enclosure captures tiles when a new loop closes. Opponents can take the tiles back; an existing loop does not continuously repaint its interior.</p></div></details>
+        <details><summary>Will enclosing a base capture it?</summary><div class="details-body"><p>No. Bases and cannons use their own capture rules. An enclosure only takes eligible floor tiles.</p></div></details>
+      </section>
+      <footer class="page-footer"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"><p>English manual preview · 13 October 2026</p><p>Images captured in a running local game, with positions arranged for explanation, the HUD hidden and the camera adjusted. Item close-ups use the actual in-game pickups.</p><p>Preview scope: enclosure and three items. Menu, lobby, base capture and the remaining items are not covered yet.</p><a href="#enclosure">Back to the guide</a></footer>
+    </main>
+  </div>
+  <dialog id="image-viewer" aria-label="Enlarged game capture"><button type="button" class="close-viewer" autofocus>Close <span aria-hidden="true">×</span></button><img src="assets/enclosure-before.png" alt=""><p class="viewer-caption"></p></dialog>
+</body>
+</html>
