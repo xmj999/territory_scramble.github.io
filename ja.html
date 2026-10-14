@@ -20,15 +20,69 @@
     <aside class="contents">
       <p class="contents-title">このガイドの内容</p>
       <nav aria-label="目次">
+        <a href="#menus">メニュー操作</a>
+        <a href="#controls">基本操作</a>
+        <a href="#lobby">ロビー操作</a>
+        <a href="#capture">拠点・カノンの占拠</a>
         <a href="#enclosure">囲い込み</a>
         <a href="#rules">囲いに使えるマス</a>
         <a href="#items">武器・アイテム</a>
-        <a href="#capture">拠点・カノンの占拠</a><a href="#menus">メニュー操作</a><a href="#lobby">ロビー操作</a><a href="#controls">基本操作</a><a href="#questions">よくある質問</a>
+        <a href="#questions">よくある質問</a>
       </nav>
       <div class="edition-note"><span class="prototype-dot"></span> 試作版<p>囲い込み・全8種のアイテム・占拠・メニュー・ロビー。</p></div>
     </aside>
     <main id="main">
-      <section id="enclosure" aria-labelledby="enclosure-title">
+      <section id="menus" class="chapter" aria-labelledby="menus-title"><div class="section-heading"><p class="chapter-label">試合を始める前に</p><h2 id="menus-title">遊び方を選ぼう</h2><p>メインメニューからローカル対戦、部屋の検索、部屋の作成へ進めます。ボタンをクリックして各画面を開きましょう。</p></div>
+<figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="日本語のメインメニュー。 — 画像を拡大"><img src="assets/menu-ja.png" alt="日本語のメインメニュー。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>日本語のメインメニュー。</figcaption></figure>
+<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">メインメニューの各ボタン</caption><thead><tr><th scope="col">ボタン</th><th scope="col">できること</th></tr></thead><tbody><tr><th scope="row">ローカルゲーム</th><td>操作するプレイヤー1人とCPUで遊ぶ試合を設定します。</td></tr><tr><th scope="row">サーバーを探す</th><td>「更新」→部屋を選択→「この部屋に参加する」で参加します。鍵付きはパスワードを入力します。試合中の部屋へは途中参加できません。</td></tr><tr><th scope="row">サーバーを建てる</th><td>部屋と試合ルールを設定し、「部屋を作成する」で作成します。パスワードが空欄なら公開部屋になります。</td></tr><tr><th scope="row">設定</th><td>音量・画面表示・プレイヤー名・コントローラー操作などを変更します。</td></tr><tr><th scope="row">言語ボタン</th><td>ゲームの表示言語を切り替えます。</td></tr><tr><th scope="row">終了</th><td>ゲームを終了します。</td></tr></tbody></table></div>
+<h3 class="guide-subheading">ローカルゲームの設定</h3><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="ローカルゲームの設定。矢印でページを切り替えてルールを確認します。 — 画像を拡大"><img src="assets/local-settings-ja.png" alt="ローカルゲームの設定。矢印でページを切り替えてルールを確認します。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>ローカルゲームの設定。矢印でページを切り替えてルールを確認します。</figcaption></figure>
+<ol class="instruction-list"><li>1ページ目でチーム数・チーム人数・CPUなどを選びます。表示される参加人数は全枠数で、ローカルで操作する人間は1人です。</li><li>矢印で次のページへ進み、マップ・アイテム・カノン・試合時間・拠点などのルールを確認します。拠点OFFでは勝利条件がパネル争奪戦に固定されます。</li><li>「ゲーム開始」で設定を確定して試合へ進みます。「キャンセル」またはEscでは編集を破棄し、メインメニューへ戻ります。</li></ol>
+<h3 class="guide-subheading">設定とコントローラー</h3><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="設定画面。音量・画面表示・プレイヤー名などを変更できます。 — 画像を拡大"><img src="assets/settings-ja.png" alt="設定画面。音量・画面表示・プレイヤー名などを変更できます。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>設定画面。音量・画面表示・プレイヤー名などを変更できます。</figcaption></figure>
+<p>設定は3ページ構成です。1ページ目は音量・表示・名前、2ページ目はコントローラーの基本操作、3ページ目は挨拶の割り当てです。コントローラーは初期状態ではOFFなので、まずキーボードとマウスで2ページ目を開き、有効化して接続機器を選びます。</p><p>UIの移動は十字キーまたは左スティックです。ドロップダウンは決定で開き、上下で選択、決定で確定します。スライダーは決定で調整を始め、左右で変更し、決定または戻るで調整を終了します。プリセットA/Bでは下側のボタンが決定、右側が戻るです。C/Dでは逆になります。文字入力にはキーボードを使います。</p></section>
+
+<section id="controls" class="chapter" aria-labelledby="controls-title">
+        <div class="section-heading"><p class="chapter-label">まずはここから</p><h2 id="controls-title">基本操作</h2><p>移動しながら照準を合わせて攻撃します。床を塗る、アイテムを拾う、施設を占拠する操作は、対象の場所へ移動することで行います。</p></div>
+        <div class="rule-table-wrap"><table class="rule-table">
+          <caption>試合中の操作（コントローラーは初期プリセットType A）</caption>
+          <thead><tr><th scope="col">操作</th><th scope="col">キーボード・マウス</th><th scope="col">コントローラー</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">移動</th><td><kbd>W</kbd> 前・<kbd>A</kbd> 左・<kbd>S</kbd> 後・<kbd>D</kbd> 右</td><td>左スティック</td></tr>
+            <tr><th scope="row">照準</th><td>マウスを動かす</td><td>右スティック。離すと直前の照準方向を保ちます</td></tr>
+            <tr><th scope="row">攻撃・地雷設置</th><td>左クリック（または <kbd>E</kbd>）</td><td>右トリガー（RT）</td></tr>
+            <tr><th scope="row">試合中のメニュー</th><td><kbd>Esc</kbd></td><td>「戻る」に割り当てたボタン（Type Aでは右側のフェイスボタン）</td></tr>
+          </tbody>
+        </table></div>
+        <p class="tip"><strong>マシンガンは押しっぱなしで連射。</strong> パンチ・ショットガン・プラズマ砲・地雷は、1回ごとに攻撃ボタンやトリガーを離してから、もう一度押します。メニューを開いても試合全体は停止しません。</p>
+        <h3 class="guide-subheading">コントローラーを使い始める</h3>
+        <ol class="instruction-list"><li>コントローラーを接続し、マウスでメインメニューの「設定」を開きます。</li><li>右矢印で2ページ目へ進み、コントローラーをONにして使う機器を選びます。初期状態はOFFです。</li><li>Type A〜Dから操作を選びます。基本操作を個別に変更するとCustomになります。設定画面の割り当てを確認してください。</li></ol>
+        <p>XInput対応PC用コントローラーで動作確認済みです。DirectInput機器は現在認識されません。文字入力にはキーボードを使います。</p>
+        <div class="rule-table-wrap"><table class="rule-table">
+          <caption>プリセットの違い（照準は全Typeで右スティック、攻撃は右トリガー）</caption>
+          <thead><tr><th scope="col">プリセット</th><th scope="col">移動</th><th scope="col">決定</th><th scope="col">戻る</th></tr></thead>
+          <tbody><tr><th scope="row">Type A（初期値）</th><td>左スティック</td><td>下のフェイスボタン</td><td>右のフェイスボタン</td></tr><tr><th scope="row">Type B</th><td>十字キー</td><td>下のフェイスボタン</td><td>右のフェイスボタン</td></tr><tr><th scope="row">Type C</th><td>左スティック</td><td>右のフェイスボタン</td><td>下のフェイスボタン</td></tr><tr><th scope="row">Type D</th><td>十字キー</td><td>右のフェイスボタン</td><td>下のフェイスボタン</td></tr></tbody>
+        </table></div>
+        <p>フェイスボタンはコントローラー右側にある4つのボタンです。Xbox表記では下がA、右がBです。このガイドの「戻る」は割り当てた操作名で、本体のBack／Selectボタンを指すものではありません。</p>
+        <h3 class="guide-subheading">メニューとロビーの操作</h3>
+        <div class="rule-table-wrap"><table class="rule-table">
+          <caption>画面やロビーで使う操作</caption><thead><tr><th scope="col">操作</th><th scope="col">キーボード・マウス</th><th scope="col">コントローラー</th></tr></thead>
+          <tbody><tr><th scope="row">項目を選ぶ・決定</th><td>ボタンをクリック</td><td>十字キーまたは左スティックで選び、「決定」を押す（全Type共通のUI移動）</td></tr><tr><th scope="row">戻る・キャンセル</th><td>画面の戻る／キャンセル、または対応画面で <kbd>Esc</kbd></td><td>「戻る」を押す</td></tr><tr><th scope="row">ロビーの移動／UI切替</th><td>ボタンは直接クリック。<kbd>Esc</kbd>でこのモードは切り替えません</td><td>「戻る」で切替。UIモード中はキャラクターを移動できません</td></tr><tr><th scope="row">準備完了・解除</th><td><kbd>F</kbd> または画面のボタン</td><td>UIモードで準備完了／完了解除を選び、「決定」</td></tr><tr><th scope="row">チャット</th><td>入力欄／チャットONをクリック → 入力 → <kbd>Enter</kbd>で送信。<kbd>Esc</kbd>で入力終了</td><td>UIでチャットを選択し、文字はキーボードで入力。十字キーまたは左スティックを右に倒して送信ボタンへ移り、「決定」で送信</td></tr><tr><th scope="row">ロビーの定型挨拶</th><td>チャット入力中以外に <kbd>1</kbd>〜<kbd>9</kbd></td><td>設定3ページ目でボタンを割り当てる（初期は未割り当て）</td></tr></tbody>
+        </table></div>
+        <p>コントローラーが切断されても、キーボード・マウスで続けられます。再接続後に操作できない場合は、設定で選択機器とON／OFFを確認してください。画面写真は<a href="#menus">メニューの章</a>、準備完了や開始条件は<a href="#lobby">ロビーの章</a>で確認できます。</p>
+      </section>
+
+<section id="lobby" class="chapter" aria-labelledby="lobby-title"><div class="section-heading"><p class="chapter-label">みんなで準備しよう</p><h2 id="lobby-title">ロビーから試合へ</h2><p>部屋のルールを確認し、チームを選んで準備完了にします。オンライン試合の開始には、人間が2人以上必要です。</p></div>
+<figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。 — 画像を拡大"><img src="assets/lobby-ja.png" alt="日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。</figcaption></figure>
+<ol class="instruction-list"><li><strong>チームを選ぶ。</strong> W・A・S・Dキーで希望する色のエリアへ移動します。自動で振り分けたい場合はランダムエリアへ。満員やCPU専用のチームでは準備完了にできません。</li><li><strong>準備完了にする。</strong> Fまたは「準備完了（F）」を押すと、その場で待機します。変更したいときは再度F、または「完了解除（F）」を押します。</li><li><strong>ホストの確認を待つ。</strong> 全員が準備完了になると、ホストが開始を確認します。9秒で自動的にOKになります。「まだ待つ」を選ぶと、ホストだけが未準備に戻ります。</li><li><strong>カウントダウンで開始。</strong> 確認後にチームが割り当てられ、5秒のカウントダウンで試合へ進みます。ホストの開始確認中は、ゲストから準備を解除できません。</li></ol>
+<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">ロビーで使える操作</caption><thead><tr><th scope="col">操作</th><th scope="col">使い方</th></tr></thead><tbody><tr><th scope="row">部屋の設定</th><td>ホストは編集、ゲストは閲覧できます。試合に影響する変更をすると、全員の準備完了が解除されます。</td></tr><tr><th scope="row">部屋を出る</th><td>準備完了中は、自分の完了を解除してから退出します。開始処理中は退出や設定変更が制限されます。</td></tr><tr><th scope="row">チャットON・入力欄</th><td>クリックして入力を開始します。Enterまたは「送信」で送信し、Escまたは「チャットOFF」で入力を終えます。入力中は移動・F・数字キーのショートカットが無効です。</td></tr><tr><th scope="row">数字キー1〜9</th><td>チャット入力中でないとき、定型の挨拶を送信します。</td></tr><tr><th scope="row">コントローラーの「戻る」操作</th><td>ロビー内の移動と、UIの操作を切り替えます。</td></tr></tbody></table></div></section>
+
+<section id="capture" class="chapter" aria-labelledby="capture-title"><div class="section-heading"><p class="chapter-label">重要な場所を押さえよう</p><h2 id="capture-title">拠点・カノンの占拠</h2><p>占拠する場所に立って、所有権を奪います。周囲の床を囲い込むだけでは占拠できません。</p></div>
+<div class="capture-pair"><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="拠点：中央のコアに乗って占拠します。 — 画像を拡大"><img src="assets/base-capture.png" alt="拠点：中央のコアに乗って占拠します。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>拠点：中央のコアに乗って占拠します。</figcaption></figure><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="カノン：中央の通路へ入り、占拠床にとどまります。 — 画像を拡大"><img src="assets/cannon-capture.png" alt="カノン：中央の通路へ入り、占拠床にとどまります。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>カノン：中央の通路へ入り、占拠床にとどまります。</figcaption></figure></div>
+<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">拠点とカノンの占拠ルールの比較</caption><thead><tr><th scope="col">条件</th><th scope="col">拠点</th><th scope="col">カノン</th></tr></thead><tbody><tr><th scope="row">立つ場所</th><td>中央のコア</td><td>中央の占拠床</td></tr><tr><th scope="row">必要時間</th><td>敵が乗っている時間を合計10秒</td><td>自チームだけで連続5秒</td></tr><tr><th scope="row">全員が離れたら</th><td>進捗を保持</td><td>進捗をリセット</td></tr><tr><th scope="row">複数チームが乗ったら</th><td>所有者以外がいれば進む。防衛側がいても止まらない</td><td>異なるチームが混在すると進捗をリセット</td></tr><tr><th scope="row">守り方</th><td>所有チームだけでコアに乗ると、削られた進捗が戻る</td><td>敵が新たに占拠を完了するまでは所有権を維持</td></tr></tbody></table></div>
+<p class="tip"><strong>人数を増やしても、占拠時間は短くなりません。</strong> 拠点の進捗は攻撃側全チームで共有します。完了時にコア上の人数が最も多い非所有チームが取得し、同数なら固定のチーム順で決まります。</p>
+<details open><summary>拠点を持つと何ができる？</summary><div class="details-body"><p>自チームが所有する拠点の7マスにいる生存中の味方は、毎秒10 HPずつ、最大HPまで回復します。復活までの時間は標準で12秒で、試合設定で変更できます。復活先は最後に占拠した拠点です。そこを奪われた場合は、ほかの所有拠点へ戻ります。</p><p>拠点がない状態で倒れると、味方が拠点を取るまで復活できません。味方が拠点を奪還すると、復活待ちの味方も即座に復帰します。拠点の奪い合いには「拠点：ON」が必要です。</p><p>占拠ゲージは残量式です。減って空になると占拠成立。削られた自拠点のコアに敵がいない状態で乗ると、満タンまで復旧します。</p></div></details>
+<details><summary>拠点と勝利条件の関係</summary><div class="details-body"><p>勝利条件が「拠点」のときは、全拠点を1チームが占拠すると即勝利です。時間切れでは拠点数を比べ、同数なら所有マス数、それも同数なら引き分けになります。</p><p>拠点システムONでは、拠点をすべて失い、全員が倒れたチームは全滅扱いです。残り1チームになることでも決着します。</p></div></details><details><summary>カノンを持つと何ができる？</summary><div class="details-body"><p>占拠したカノンはチームのために自動で砲撃し、障害物床を含む対象の床を塗ります。占拠後はその場から離れても構いません。敵も同じように5秒間の占拠を完了すれば、奪い返せます。</p><p>所有するカノン床は囲い込みの線に使えますが、その床自体は所有マス数には含みません。持ち歩く武器の「プラズマ砲」とは別物です。</p></div></details></section>
+
+<section id="enclosure" aria-labelledby="enclosure-title">
         <div class="chapter-intro">
           <p class="chapter-label">陣地を広げるルール</p>
           <h1 id="enclosure-title">輪をつないで、<br>内側を陣地に。</h1>
@@ -60,7 +114,7 @@
         <p class="tip"><strong>味方と協力しましょう。</strong> 味方や味方CPU、カノン砲、以前の囲い込みで自色になったマスも、輪の一部として使えます。</p>
       </section>
 
-      <section id="rules" class="chapter" aria-labelledby="rules-title">
+<section id="rules" class="chapter" aria-labelledby="rules-title">
         <div class="section-heading"><h2 id="rules-title">どのマスを囲いに使える？</h2><p>マップの形ではなく、自分のチームの色で輪が閉じていることが条件です。</p></div>
         <div class="rule-table-wrap"><table class="rule-table">
           <caption class="sr-only">マスの種類ごとの、囲いの線に使える条件と囲い込みで取得できる範囲</caption>
@@ -77,7 +131,7 @@
         <details><summary>輪の内側に穴・拠点・カノンがあったら？</summary><div class="details-body"><p>周囲の取得可能なマスは、そのまま取得できます。穴や専用床は対象から除かれ、拠点・カノンの所有権は変わりません。</p><p>穴やマップの端を、線の足りない部分の代わりにはできません。自色のマスで輪を閉じる必要があります。</p></div></details>
       </section>
 
-      <section id="items" class="chapter" aria-labelledby="items-title">
+<section id="items" class="chapter" aria-labelledby="items-title">
         <div class="section-heading"><p class="chapter-label">拾えるアイテムを知ろう</p><h2 id="items-title">装備が変わると、<br>戦い方も変わる。</h2><p>全8種類を紹介します。見た目と効果を覚えて、試合で活用しましょう。</p></div><p class="tip">武器（地雷を含む）を拾うと、今の武器と持ち替えます。同じ武器なら弾数が新品の状態に戻り、使い切るとパンチに戻ります。回復・防具・索敵・スピードアップでは武器は変わりません。</p>
         <article class="item" id="machine-gun">
           <figure><button class="image-button" type="button" data-zoom aria-label="マシンガンの画像を拡大"><img src="assets/item-machinegun.png" alt="ゲームの六角形の床の上に浮かぶ、実際のマシンガンの取得用モデル。" width="1200" height="800" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>マシンガンの取得用モデル</figcaption></figure>
@@ -98,62 +152,14 @@
 <article class="item" id="speed-up"><figure><button class="image-button" type="button" data-zoom aria-label="スピードアップの取得用モデル — 画像を拡大"><img src="assets/item-speedup.png" alt="スピードアップの取得用モデル" width="1200" height="800" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>スピードアップの取得用モデル</figcaption></figure><div class="item-copy"><p class="item-category">移動</p><h3>スピードアップ</h3><p>青い二重の矢印が目印です。拾うとすぐに移動速度が上がります。</p><dl class="stats"><div><dt>持続時間</dt><dd>5秒間</dd></div></dl><p class="field-note">短時間の加速を、移動や危険な場所からの離脱に活用しましょう。</p></div></article><p class="scope-note">マシンガンだけは攻撃入力の押しっぱなしで連射できます。パンチ・ショットガン・プラズマ砲・地雷は、1回ごとに入力を離す必要があります。</p>
       </section>
 
-
-<section id="capture" class="chapter" aria-labelledby="capture-title"><div class="section-heading"><p class="chapter-label">重要な場所を押さえよう</p><h2 id="capture-title">拠点・カノンの占拠</h2><p>占拠する場所に立って、所有権を奪います。周囲の床を囲い込むだけでは占拠できません。</p></div>
-<div class="capture-pair"><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="拠点：中央のコアに乗って占拠します。 — 画像を拡大"><img src="assets/base-capture.png" alt="拠点：中央のコアに乗って占拠します。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>拠点：中央のコアに乗って占拠します。</figcaption></figure><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="カノン：中央の通路へ入り、占拠床にとどまります。 — 画像を拡大"><img src="assets/cannon-capture.png" alt="カノン：中央の通路へ入り、占拠床にとどまります。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>カノン：中央の通路へ入り、占拠床にとどまります。</figcaption></figure></div>
-<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">拠点とカノンの占拠ルールの比較</caption><thead><tr><th scope="col">条件</th><th scope="col">拠点</th><th scope="col">カノン</th></tr></thead><tbody><tr><th scope="row">立つ場所</th><td>中央のコア</td><td>中央の占拠床</td></tr><tr><th scope="row">必要時間</th><td>敵が乗っている時間を合計10秒</td><td>自チームだけで連続5秒</td></tr><tr><th scope="row">全員が離れたら</th><td>進捗を保持</td><td>進捗をリセット</td></tr><tr><th scope="row">複数チームが乗ったら</th><td>所有者以外がいれば進む。防衛側がいても止まらない</td><td>異なるチームが混在すると進捗をリセット</td></tr><tr><th scope="row">守り方</th><td>所有チームだけでコアに乗ると、削られた進捗が戻る</td><td>敵が新たに占拠を完了するまでは所有権を維持</td></tr></tbody></table></div>
-<p class="tip"><strong>人数を増やしても、占拠時間は短くなりません。</strong> 拠点の進捗は攻撃側全チームで共有します。完了時にコア上の人数が最も多い非所有チームが取得し、同数なら固定のチーム順で決まります。</p>
-<details open><summary>拠点を持つと何ができる？</summary><div class="details-body"><p>自チームが所有する拠点の7マスにいる生存中の味方は、毎秒10 HPずつ、最大HPまで回復します。復活までの時間は標準で12秒で、試合設定で変更できます。復活先は最後に占拠した拠点です。そこを奪われた場合は、ほかの所有拠点へ戻ります。</p><p>拠点がない状態で倒れると、味方が拠点を取るまで復活できません。味方が拠点を奪還すると、復活待ちの味方も即座に復帰します。拠点の奪い合いには「拠点：ON」が必要です。</p><p>占拠ゲージは残量式です。減って空になると占拠成立。削られた自拠点のコアに敵がいない状態で乗ると、満タンまで復旧します。</p></div></details>
-<details><summary>拠点と勝利条件の関係</summary><div class="details-body"><p>勝利条件が「拠点」のときは、全拠点を1チームが占拠すると即勝利です。時間切れでは拠点数を比べ、同数なら所有マス数、それも同数なら引き分けになります。</p><p>拠点システムONでは、拠点をすべて失い、全員が倒れたチームは全滅扱いです。残り1チームになることでも決着します。</p></div></details><details><summary>カノンを持つと何ができる？</summary><div class="details-body"><p>占拠したカノンはチームのために自動で砲撃し、障害物床を含む対象の床を塗ります。占拠後はその場から離れても構いません。敵も同じように5秒間の占拠を完了すれば、奪い返せます。</p><p>所有するカノン床は囲い込みの線に使えますが、その床自体は所有マス数には含みません。持ち歩く武器の「プラズマ砲」とは別物です。</p></div></details></section>
-<section id="menus" class="chapter" aria-labelledby="menus-title"><div class="section-heading"><p class="chapter-label">試合を始める前に</p><h2 id="menus-title">遊び方を選ぼう</h2><p>メインメニューからローカル対戦、部屋の検索、部屋の作成へ進めます。ボタンをクリックして各画面を開きましょう。</p></div>
-<figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="日本語のメインメニュー。 — 画像を拡大"><img src="assets/menu-ja.png" alt="日本語のメインメニュー。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>日本語のメインメニュー。</figcaption></figure>
-<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">メインメニューの各ボタン</caption><thead><tr><th scope="col">ボタン</th><th scope="col">できること</th></tr></thead><tbody><tr><th scope="row">ローカルゲーム</th><td>操作するプレイヤー1人とCPUで遊ぶ試合を設定します。</td></tr><tr><th scope="row">サーバーを探す</th><td>「更新」→部屋を選択→「この部屋に参加する」で参加します。鍵付きはパスワードを入力します。試合中の部屋へは途中参加できません。</td></tr><tr><th scope="row">サーバーを建てる</th><td>部屋と試合ルールを設定し、「部屋を作成する」で作成します。パスワードが空欄なら公開部屋になります。</td></tr><tr><th scope="row">設定</th><td>音量・画面表示・プレイヤー名・コントローラー操作などを変更します。</td></tr><tr><th scope="row">言語ボタン</th><td>ゲームの表示言語を切り替えます。</td></tr><tr><th scope="row">終了</th><td>ゲームを終了します。</td></tr></tbody></table></div>
-<h3 class="guide-subheading">ローカルゲームの設定</h3><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="ローカルゲームの設定。矢印でページを切り替えてルールを確認します。 — 画像を拡大"><img src="assets/local-settings-ja.png" alt="ローカルゲームの設定。矢印でページを切り替えてルールを確認します。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>ローカルゲームの設定。矢印でページを切り替えてルールを確認します。</figcaption></figure>
-<ol class="instruction-list"><li>1ページ目でチーム数・チーム人数・CPUなどを選びます。表示される参加人数は全枠数で、ローカルで操作する人間は1人です。</li><li>矢印で次のページへ進み、マップ・アイテム・カノン・試合時間・拠点などのルールを確認します。拠点OFFでは勝利条件がパネル争奪戦に固定されます。</li><li>「ゲーム開始」で設定を確定して試合へ進みます。「キャンセル」またはEscでは編集を破棄し、メインメニューへ戻ります。</li></ol>
-<h3 class="guide-subheading">設定とコントローラー</h3><figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="設定画面。音量・画面表示・プレイヤー名などを変更できます。 — 画像を拡大"><img src="assets/settings-ja.png" alt="設定画面。音量・画面表示・プレイヤー名などを変更できます。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>設定画面。音量・画面表示・プレイヤー名などを変更できます。</figcaption></figure>
-<p>設定は3ページ構成です。1ページ目は音量・表示・名前、2ページ目はコントローラーの基本操作、3ページ目は挨拶の割り当てです。コントローラーは初期状態ではOFFなので、まずキーボードとマウスで2ページ目を開き、有効化して接続機器を選びます。</p><p>UIの移動は十字キーまたは左スティックです。ドロップダウンは決定で開き、上下で選択、決定で確定します。スライダーは決定で調整を始め、左右で変更し、決定または戻るで調整を終了します。プリセットA/Bでは下側のボタンが決定、右側が戻るです。C/Dでは逆になります。文字入力にはキーボードを使います。</p></section>
-<section id="lobby" class="chapter" aria-labelledby="lobby-title"><div class="section-heading"><p class="chapter-label">みんなで準備しよう</p><h2 id="lobby-title">ロビーから試合へ</h2><p>部屋のルールを確認し、チームを選んで準備完了にします。オンライン試合の開始には、人間が2人以上必要です。</p></div>
-<figure class="guide-capture"><button class="image-button" type="button" data-zoom aria-label="日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。 — 画像を拡大"><img src="assets/lobby-ja.png" alt="日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。" width="1600" height="900" loading="lazy"><span class="zoom-label">画像を拡大</span></button><figcaption>日本語のロビー。チームエリア・参加者一覧・チャット・部屋の操作ボタン。</figcaption></figure>
-<ol class="instruction-list"><li><strong>チームを選ぶ。</strong> W・A・S・Dキーで希望する色のエリアへ移動します。自動で振り分けたい場合はランダムエリアへ。満員やCPU専用のチームでは準備完了にできません。</li><li><strong>準備完了にする。</strong> Fまたは「準備完了（F）」を押すと、その場で待機します。変更したいときは再度F、または「完了解除（F）」を押します。</li><li><strong>ホストの確認を待つ。</strong> 全員が準備完了になると、ホストが開始を確認します。9秒で自動的にOKになります。「まだ待つ」を選ぶと、ホストだけが未準備に戻ります。</li><li><strong>カウントダウンで開始。</strong> 確認後にチームが割り当てられ、5秒のカウントダウンで試合へ進みます。ホストの開始確認中は、ゲストから準備を解除できません。</li></ol>
-<div class="rule-table-wrap"><table class="rule-table"><caption class="sr-only">ロビーで使える操作</caption><thead><tr><th scope="col">操作</th><th scope="col">使い方</th></tr></thead><tbody><tr><th scope="row">部屋の設定</th><td>ホストは編集、ゲストは閲覧できます。試合に影響する変更をすると、全員の準備完了が解除されます。</td></tr><tr><th scope="row">部屋を出る</th><td>準備完了中は、自分の完了を解除してから退出します。開始処理中は退出や設定変更が制限されます。</td></tr><tr><th scope="row">チャットON・入力欄</th><td>クリックして入力を開始します。Enterまたは「送信」で送信し、Escまたは「チャットOFF」で入力を終えます。入力中は移動・F・数字キーのショートカットが無効です。</td></tr><tr><th scope="row">数字キー1〜9</th><td>チャット入力中でないとき、定型の挨拶を送信します。</td></tr><tr><th scope="row">コントローラーの「戻る」操作</th><td>ロビー内の移動と、UIの操作を切り替えます。</td></tr></tbody></table></div></section>
-      <section id="controls" class="chapter" aria-labelledby="controls-title">
-        <div class="section-heading"><p class="chapter-label">まずはここから</p><h2 id="controls-title">基本操作</h2><p>移動しながら照準を合わせて攻撃します。床を塗る、アイテムを拾う、施設を占拠する操作は、対象の場所へ移動することで行います。</p></div>
-        <div class="rule-table-wrap"><table class="rule-table">
-          <caption>試合中の操作（コントローラーは初期プリセットType A）</caption>
-          <thead><tr><th scope="col">操作</th><th scope="col">キーボード・マウス</th><th scope="col">コントローラー</th></tr></thead>
-          <tbody>
-            <tr><th scope="row">移動</th><td><kbd>W</kbd> 前・<kbd>A</kbd> 左・<kbd>S</kbd> 後・<kbd>D</kbd> 右</td><td>左スティック</td></tr>
-            <tr><th scope="row">照準</th><td>マウスを動かす</td><td>右スティック。離すと直前の照準方向を保ちます</td></tr>
-            <tr><th scope="row">攻撃・地雷設置</th><td>左クリック（または <kbd>E</kbd>）</td><td>右トリガー（RT）</td></tr>
-            <tr><th scope="row">試合中のメニュー</th><td><kbd>Esc</kbd></td><td>「戻る」に割り当てたボタン（Type Aでは右側のフェイスボタン）</td></tr>
-          </tbody>
-        </table></div>
-        <p class="tip"><strong>マシンガンは押しっぱなしで連射。</strong> パンチ・ショットガン・プラズマ砲・地雷は、1回ごとに攻撃ボタンやトリガーを離してから、もう一度押します。メニューを開いても試合全体は停止しません。</p>
-        <h3 class="guide-subheading">コントローラーを使い始める</h3>
-        <ol class="instruction-list"><li>コントローラーを接続し、マウスでメインメニューの「設定」を開きます。</li><li>右矢印で2ページ目へ進み、コントローラーをONにして使う機器を選びます。初期状態はOFFです。</li><li>Type A〜Dから操作を選びます。基本操作を個別に変更するとCustomになります。設定画面の割り当てを確認してください。</li></ol>
-        <p>XInput対応PC用コントローラーで動作確認済みです。DirectInput機器は現在認識されません。文字入力にはキーボードを使います。</p>
-        <div class="rule-table-wrap"><table class="rule-table">
-          <caption>プリセットの違い（照準は全Typeで右スティック、攻撃は右トリガー）</caption>
-          <thead><tr><th scope="col">プリセット</th><th scope="col">移動</th><th scope="col">決定</th><th scope="col">戻る</th></tr></thead>
-          <tbody><tr><th scope="row">Type A（初期値）</th><td>左スティック</td><td>下のフェイスボタン</td><td>右のフェイスボタン</td></tr><tr><th scope="row">Type B</th><td>十字キー</td><td>下のフェイスボタン</td><td>右のフェイスボタン</td></tr><tr><th scope="row">Type C</th><td>左スティック</td><td>右のフェイスボタン</td><td>下のフェイスボタン</td></tr><tr><th scope="row">Type D</th><td>十字キー</td><td>右のフェイスボタン</td><td>下のフェイスボタン</td></tr></tbody>
-        </table></div>
-        <p>フェイスボタンはコントローラー右側にある4つのボタンです。Xbox表記では下がA、右がBです。このガイドの「戻る」は割り当てた操作名で、本体のBack／Selectボタンを指すものではありません。</p>
-        <h3 class="guide-subheading">メニューとロビーの操作</h3>
-        <div class="rule-table-wrap"><table class="rule-table">
-          <caption>画面やロビーで使う操作</caption><thead><tr><th scope="col">操作</th><th scope="col">キーボード・マウス</th><th scope="col">コントローラー</th></tr></thead>
-          <tbody><tr><th scope="row">項目を選ぶ・決定</th><td>ボタンをクリック</td><td>十字キーまたは左スティックで選び、「決定」を押す（全Type共通のUI移動）</td></tr><tr><th scope="row">戻る・キャンセル</th><td>画面の戻る／キャンセル、または対応画面で <kbd>Esc</kbd></td><td>「戻る」を押す</td></tr><tr><th scope="row">ロビーの移動／UI切替</th><td>ボタンは直接クリック。<kbd>Esc</kbd>でこのモードは切り替えません</td><td>「戻る」で切替。UIモード中はキャラクターを移動できません</td></tr><tr><th scope="row">準備完了・解除</th><td><kbd>F</kbd> または画面のボタン</td><td>UIモードで準備完了／完了解除を選び、「決定」</td></tr><tr><th scope="row">チャット</th><td>入力欄／チャットONをクリック → 入力 → <kbd>Enter</kbd>で送信。<kbd>Esc</kbd>で入力終了</td><td>UIでチャットを選択し、文字はキーボードで入力。十字キーまたは左スティックを右に倒して送信ボタンへ移り、「決定」で送信</td></tr><tr><th scope="row">ロビーの定型挨拶</th><td>チャット入力中以外に <kbd>1</kbd>〜<kbd>9</kbd></td><td>設定3ページ目でボタンを割り当てる（初期は未割り当て）</td></tr></tbody>
-        </table></div>
-        <p>コントローラーが切断されても、キーボード・マウスで続けられます。再接続後に操作できない場合は、設定で選択機器とON／OFFを確認してください。画面写真は<a href="#menus">メニューの章</a>、準備完了や開始条件は<a href="#lobby">ロビーの章</a>で確認できます。</p>
-      </section>
-
-      <section id="questions" class="chapter questions" aria-labelledby="questions-title">
+<section id="questions" class="chapter questions" aria-labelledby="questions-title">
         <div class="section-heading"><h2 id="questions-title">試す前に知っておこう</h2></div>
         <details open><summary>周囲を塗ったのに、囲い込みが成立しません。</summary><div class="details-body"><p>囲い込みがONになっているか、線に隙間がないかを確認しましょう。カノン床を線に使う場合も含め、輪の全体が自チームの色でつながっている必要があります。穴・拠点専用床・マップの端で隙間を埋めることはできません。</p></div></details>
         <details><summary>輪は全部自分で塗らないといけませんか？</summary><div class="details-body"><p>いいえ。チームの色が同じなら使えます。味方・味方CPU・カノン砲撃・以前の囲い込みで塗られたマスも輪の一部になります。</p></div></details>
         <details><summary>輪を閉じたら、中のマスはずっと守られますか？</summary><div class="details-body"><p>いいえ。囲い込みは、新しく輪が閉じた瞬間の一括取得です。相手はそのマスを奪い返せます。完成済みの輪が、内側を繰り返し自動で塗り直すことはありません。</p></div></details>
         <details><summary>拠点を囲めば、占拠できますか？</summary><div class="details-body"><p>いいえ。拠点やカノンの占拠には、それぞれの占拠ルールがあります。囲い込みで取得するのは、対象となる床のマスだけです。</p></div></details>
       </section>
-      <footer class="page-footer"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"><p>日本語マニュアル試作版 · 2026年10月14日</p><p>画像は実際のゲームとUIを撮影したものです。囲い込み・施設・アイテムは説明用に配置やカメラを調整しています。ロビーはローカル接続で撮影したもので、公開オンライン対戦の記録ではありません。</p><p>掲載範囲：基本操作、囲い込み、全8種のアイテム、拠点・カノンの占拠、メニュー・ロビーの操作。</p><a href="#enclosure">ガイドの先頭へ</a></footer>
+      <footer class="page-footer"><img src="assets/title-logo.png" width="1071" height="270" alt="Territory Scramble"><p>日本語マニュアル試作版 · 2026年10月14日</p><p>画像は実際のゲームとUIを撮影したものです。囲い込み・施設・アイテムは説明用に配置やカメラを調整しています。ロビーはローカル接続で撮影したもので、公開オンライン対戦の記録ではありません。</p><p>掲載範囲：基本操作、囲い込み、全8種のアイテム、拠点・カノンの占拠、メニュー・ロビーの操作。</p><a href="#menus">ガイドの先頭へ</a></footer>
     </main>
   </div>
   <dialog id="image-viewer" aria-label="ゲーム画像の拡大表示"><button type="button" class="close-viewer" autofocus>閉じる <span aria-hidden="true">×</span></button><img src="assets/enclosure-before.png" alt=""><p class="viewer-caption"></p></dialog>

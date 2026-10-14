@@ -18,4 +18,4 @@ Twenty captures show the real game and UI. Match images are staged for explanati
 
 This remains a preview. Languages other than English/Japanese, in-game integration and PDF export are not included. Website publication and Steam store links remain deferred.
 
-Source snapshot: game repository commit `999649d`, `website/manual/dist/`. Update both language pages and the comparison text in `manual.js` in the game repository, then copy the HTML, CSS, JavaScript and PNG images here. Do not upload the game source, raw models, credentials or hosting configuration for other services.
+Source snapshot: game repository commit `b361f98`, `website/manual/dist/`. Update both language pages and the comparison text in `manual.js` in the game repository, then copy the HTML, CSS, JavaScript and PNG images here. Do not upload the game source, raw models, credentials or hosting configuration for other services.
