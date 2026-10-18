@@ -19,3 +19,11 @@ Twenty captures show the real game and UI. Match images are staged for explanati
 Languages other than English/Japanese, in-game integration and PDF export are not included. Steam store links are not configured.
 
 Source snapshot: game repository commit `358b7dd`, `website/manual/dist/`. Update both language pages and the comparison text in `manual.js` in the game repository, then copy the HTML, CSS, JavaScript and PNG images here. Do not upload the game source, raw models, credentials or hosting configuration for other services.
+
+## Support pages (`support/`)
+
+`support/index.html` (English) and `support/ja.html` (Japanese) link to the contact form, Steam discussions, Steam Support, the player guide and the privacy policy. `support/privacy.html` and `support/privacy-ja.html` are the privacy policy, effective 20 October 2026.
+
+These four files are generated. Do not edit them by hand. The privacy policy source is `docs/legal/privacy-policy.md` in the game repository, and the support page text is in `tools/support_pages.py` there. After editing either, run `python tools/support_pages.py <path to this repository>` from the game repository and commit the result here.
+
+Support URL: https://xmj999.github.io/territory_scramble.github.io/support/
