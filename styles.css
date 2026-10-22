@@ -20,3 +20,6 @@ html:lang(ja) .steps h2{font-size:1.1rem}
 
 #controls kbd{display:inline-block;min-width:1.7em;padding:1px 5px;border:1px solid #b7cada;border-bottom-width:2px;border-radius:4px;background:#fff;font:inherit;font-size:.9em;text-align:center;white-space:nowrap}#controls caption{text-align:left;padding:0 0 12px;color:var(--muted);line-height:1.6}
 .site-header{background:#d0d0d0}
+.site-nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:6px 20px}.site-nav a{white-space:nowrap}.site-nav a[aria-current="page"]{color:var(--ink);font-weight:700;text-decoration:none}
+@media(max-width:1100px){.site-header{flex-wrap:wrap;row-gap:12px}.site-header .edition{display:contents}.site-header .language-switch{margin-left:auto}.site-nav{order:1;flex-basis:100%}}
+@media(max-width:760px){.site-nav{gap:4px 14px}}
